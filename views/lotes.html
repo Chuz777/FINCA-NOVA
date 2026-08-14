@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Finca | Lotes</title>
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <h1>FINCA NOVA</h1>
+
+          <nav class="top-nav" aria-label="Navegación principal">
+            <a href="../index.html">Inicio</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="lotes.html" class="active">Lotes</a>
+            <a href="produccion.html">Producción</a>
+            <a href="enfermedades.html">Enfermedades</a>
+            <a href="contabilidad.html">Contabilidad</a>
+            <a href="empleados.html">Empleados</a>
+          </nav>
+
+          <div class="user-badge">
+            <div class="user-avatar">JP</div>
+            <div>
+              <strong>Juan Pérez</strong><br />
+              <small>Administrador</small>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="main-grid">
+        <aside class="sidebar">
+          <h3 class="side-title">Navegación</h3>
+          <nav class="side-nav">
+            <a href="dashboard.html">📊 Dashboard</a>
+            <a href="lotes.html" class="active">🌱 Lotes</a>
+            <a href="produccion.html">⚙️ Producción</a>
+            <a href="enfermedades.html">🩺 Enfermedades</a>
+            <a href="contabilidad.html">💰 Contabilidad</a>
+            <a href="empleados.html">👥 Empleados</a>
+          </nav>
+        </aside>
+
+        <main class="content">
+          <section class="page-header">
+            <h2>Gestión de lotes</h2>
+            <div class="action-group">
+              <button class="btn-small light">Exportar</button>
+              <button class="btn-small primary">Nuevo lote</button>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h3>Registrar nuevo lote</h3>
+            <div class="form-grid">
+              <div class="input-group">
+                <label>Nombre del lote</label>
+                <input type="text" value="Lote 05" />
+              </div>
+              <div class="input-group">
+                <label>Ubicación</label>
+                <input type="text" value="Sector Norte" />
+              </div>
+              <div class="input-group">
+                <label>Variedad</label>
+                <select>
+                  <option>Catuaí</option>
+                  <option>Robusta</option>
+                  <option>Geisha</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label>Estado</label>
+                <select>
+                  <option>Activo</option>
+                  <option>En espera</option>
+                  <option>En proceso</option>
+                </select>
+              </div>
+              <div class="input-group" style="grid-column: 1 / -1;">
+                <label>Observaciones</label>
+                <textarea>Se realiza control semanal del crecimiento y se aplicarán tratamientos preventivos durante la próxima semana.</textarea>
+              </div>
+            </div>
+          </section>
+
+          <section class="table-panel">
+            <h3>Listado de lotes</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Lote</th>
+                  <th>Ubicación</th>
+                  <th>Variedad</th>
+                  <th>Estado</th>
+                  <th>Productividad</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lote 01</td>
+                  <td>Sector Norte</td>
+                  <td>Catuaí</td>
+                  <td><span class="badge success">Activo</span></td>
+                  <td>82%</td>
+                </tr>
+                <tr>
+                  <td>Lote 02</td>
+                  <td>Sector Centro</td>
+                  <td>Robusta</td>
+                  <td><span class="badge warning">Procesando</span></td>
+                  <td>67%</td>
+                </tr>
+                <tr>
+                  <td>Lote 03</td>
+                  <td>Sector Sur</td>
+                  <td>Geisha</td>
+                  <td><span class="badge danger">Alerta</span></td>
+                  <td>54%</td>
+                </tr>
+                <tr>
+                  <td>Lote 04</td>
+                  <td>Sector Este</td>
+                  <td>Catuaí</td>
+                  <td><span class="badge success">Activo</span></td>
+                  <td>88%</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

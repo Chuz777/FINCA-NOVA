@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Finca | Empleados</title>
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <h1>FINCA NOVA</h1>
+
+          <nav class="top-nav" aria-label="Navegación principal">
+            <a href="../index.html">Inicio</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="lotes.html">Lotes</a>
+            <a href="produccion.html">Producción</a>
+            <a href="enfermedades.html">Enfermedades</a>
+            <a href="contabilidad.html">Contabilidad</a>
+            <a href="empleados.html" class="active">Empleados</a>
+          </nav>
+
+          <div class="user-badge">
+            <div class="user-avatar">JP</div>
+            <div>
+              <strong>Juan Pérez</strong><br />
+              <small>Administrador</small>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="main-grid">
+        <aside class="sidebar">
+          <h3 class="side-title">Navegación</h3>
+          <nav class="side-nav">
+            <a href="dashboard.html">📊 Dashboard</a>
+            <a href="lotes.html">🌱 Lotes</a>
+            <a href="produccion.html">⚙️ Producción</a>
+            <a href="enfermedades.html">🩺 Enfermedades</a>
+            <a href="contabilidad.html">💰 Contabilidad</a>
+            <a href="empleados.html" class="active">👥 Empleados</a>
+          </nav>
+        </aside>
+
+        <main class="content">
+          <section class="page-header">
+            <h2>Gestión del personal</h2>
+            <div class="action-group">
+              <button class="btn-small light">Exportar lista</button>
+              <button class="btn-small primary">Nuevo empleado</button>
+            </div>
+          </section>
+
+          <section class="stats-grid">
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Total</div>
+                <div class="stat-icon">👥</div>
+              </div>
+              <p class="stat-value">38</p>
+              <span class="stat-delta delta-up">+3 este mes</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Activos</div>
+                <div class="stat-icon">✅</div>
+              </div>
+              <p class="stat-value">31</p>
+              <span class="stat-delta delta-up">81% ocupación</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Ausencias</div>
+                <div class="stat-icon">📅</div>
+              </div>
+              <p class="stat-value">04</p>
+              <span class="stat-delta delta-warning">2 por licencia</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Pagos</div>
+                <div class="stat-icon">💳</div>
+              </div>
+              <p class="stat-value">₡5.400</p>
+              <span class="stat-delta delta-up">Pago al día</span>
+            </article>
+          </section>
+
+          <section class="panel">
+            <h3>Registro de personal</h3>
+            <div class="form-grid">
+              <div class="input-group">
+                <label>Nombre completo</label>
+                <input type="text" value="María López" />
+              </div>
+              <div class="input-group">
+                <label>Rol</label>
+                <select>
+                  <option>Recolector</option>
+                  <option>Encargado</option>
+                  <option>Administrador</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label>Turno</label>
+                <select>
+                  <option>Mañana</option>
+                  <option>Tarde</option>
+                  <option>Noche</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label>Salario</label>
+                <input type="text" value="₡350.000" />
+              </div>
+              <div class="input-group" style="grid-column: 1 / -1;">
+                <label>Observaciones</label>
+                <textarea>Trabaja en recolección de café en los lotes 01 y 02, con buena productividad durante la temporada actual.</textarea>
+              </div>
+            </div>
+          </section>
+
+          <section class="table-panel">
+            <h3>Personal activo</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Rol</th>
+                  <th>Turno</th>
+                  <th>Estado</th>
+                  <th>Pago</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>María López</td>
+                  <td>Recolector</td>
+                  <td>Mañana</td>
+                  <td><span class="badge success">Activo</span></td>
+                  <td>₡350.000</td>
+                </tr>
+                <tr>
+                  <td>Pedro Ramos</td>
+                  <td>Encargado</td>
+                  <td>Tarde</td>
+                  <td><span class="badge success">Activo</span></td>
+                  <td>₡500.000</td>
+                </tr>
+                <tr>
+                  <td>Ana Flores</td>
+                  <td>Recolector</td>
+                  <td>Mañana</td>
+                  <td><span class="badge warning">Ausente</span></td>
+                  <td>₡350.000</td>
+                </tr>
+                <tr>
+                  <td>Esteban Ruiz</td>
+                  <td>Administrador</td>
+                  <td>Completo</td>
+                  <td><span class="badge success">Activo</span></td>
+                  <td>₡900.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

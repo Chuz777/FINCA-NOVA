@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Finca | Enfermedades</title>
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <h1>FINCA NOVA</h1>
+
+          <nav class="top-nav" aria-label="Navegación principal">
+            <a href="../index.html">Inicio</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="lotes.html">Lotes</a>
+            <a href="produccion.html">Producción</a>
+            <a href="enfermedades.html" class="active">Enfermedades</a>
+            <a href="contabilidad.html">Contabilidad</a>
+            <a href="empleados.html">Empleados</a>
+          </nav>
+
+          <div class="user-badge">
+            <div class="user-avatar">JP</div>
+            <div>
+              <strong>Juan Pérez</strong><br />
+              <small>Administrador</small>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="main-grid">
+        <aside class="sidebar">
+          <h3 class="side-title">Navegación</h3>
+          <nav class="side-nav">
+            <a href="dashboard.html">📊 Dashboard</a>
+            <a href="lotes.html">🌱 Lotes</a>
+            <a href="produccion.html">⚙️ Producción</a>
+            <a href="enfermedades.html" class="active">🩺 Enfermedades</a>
+            <a href="contabilidad.html">💰 Contabilidad</a>
+            <a href="empleados.html">👥 Empleados</a>
+          </nav>
+        </aside>
+
+        <main class="content">
+          <section class="page-header">
+            <h2>Monitoreo sanitario</h2>
+            <div class="action-group">
+              <button class="btn-small light">Historial</button>
+              <button class="btn-small primary">Nueva revisión</button>
+            </div>
+          </section>
+
+          <section class="stats-grid">
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Casos activos</div>
+                <div class="stat-icon">🩺</div>
+              </div>
+              <p class="stat-value">08</p>
+              <span class="stat-delta delta-warning">4 en observación</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Tratamientos</div>
+                <div class="stat-icon">💊</div>
+              </div>
+              <p class="stat-value">12</p>
+              <span class="stat-delta delta-up">+2 esta semana</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Recuperación</div>
+                <div class="stat-icon">✅</div>
+              </div>
+              <p class="stat-value">74%</p>
+              <span class="stat-delta delta-up">Buen avance</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Alertas</div>
+                <div class="stat-icon">🚨</div>
+              </div>
+              <p class="stat-value">03</p>
+              <span class="stat-delta delta-down">Requieren acción</span>
+            </article>
+          </section>
+
+          <section class="panel">
+            <h3>Registrar diagnóstico</h3>
+            <div class="form-grid">
+              <div class="input-group">
+                <label>Enfermedad</label>
+                <input type="text" value="Roya" />
+              </div>
+              <div class="input-group">
+                <label>Lote afectado</label>
+                <input type="text" value="Lote 03" />
+              </div>
+              <div class="input-group">
+                <label>Fecha de revisión</label>
+                <input type="date" value="2026-08-12" />
+              </div>
+              <div class="input-group">
+                <label>Gravedad</label>
+                <select>
+                  <option>Media</option>
+                  <option>Alta</option>
+                  <option>Baja</option>
+                </select>
+              </div>
+              <div class="input-group" style="grid-column: 1 / -1;">
+                <label>Tratamiento aplicado</label>
+                <textarea>Aplicación de fungicida foliar y poda de hojas afectadas para reducir propagación.</textarea>
+              </div>
+            </div>
+          </section>
+
+          <section class="table-panel">
+            <h3>Historial de enfermedades</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Enfermedad</th>
+                  <th>Lote</th>
+                  <th>Fecha</th>
+                  <th>Gravedad</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Roya</td>
+                  <td>Lote 03</td>
+                  <td>09/08/2026</td>
+                  <td><span class="badge warning">Media</span></td>
+                  <td><span class="badge primary">En tratamiento</span></td>
+                </tr>
+                <tr>
+                  <td>Mancha foliar</td>
+                  <td>Lote 05</td>
+                  <td>05/08/2026</td>
+                  <td><span class="badge danger">Alta</span></td>
+                  <td><span class="badge success">Controlado</span></td>
+                </tr>
+                <tr>
+                  <td>Hormiga</td>
+                  <td>Lote 02</td>
+                  <td>02/08/2026</td>
+                  <td><span class="badge warning">Media</span></td>
+                  <td><span class="badge primary">Monitoreo</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

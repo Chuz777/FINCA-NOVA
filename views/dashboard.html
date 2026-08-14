@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Finca | Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <h1>FINCA NOVA</h1>
+
+          <nav class="top-nav" aria-label="Navegación principal">
+            <a href="../index.html">Inicio</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="lotes.html">Lotes</a>
+            <a href="produccion.html">Producción</a>
+            <a href="enfermedades.html">Enfermedades</a>
+            <a href="contabilidad.html">Contabilidad</a>
+            <a href="empleados.html">Empleados</a>
+          </nav>
+
+          <div class="user-badge">
+            <div class="user-avatar">JP</div>
+            <div>
+              <strong>Juan Pérez</strong><br />
+              <small>Administrador</small>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="main-grid">
+        <aside class="sidebar">
+          <h3 class="side-title">Navegación</h3>
+          <nav class="side-nav">
+            <a href="dashboard.html" class="active">📊 Dashboard</a>
+            <a href="lotes.html">🌱 Lotes</a>
+            <a href="produccion.html">⚙️ Producción</a>
+            <a href="enfermedades.html">🩺 Enfermedades</a>
+            <a href="contabilidad.html">💰 Contabilidad</a>
+            <a href="empleados.html">👥 Empleados</a>
+          </nav>
+        </aside>
+
+        <main class="content">
+          <section class="stats-grid">
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Lotes activos</div>
+                <div class="stat-icon">🌿</div>
+              </div>
+              <p class="stat-value">24</p>
+              <span class="stat-delta delta-up">+8% vs. mes anterior</span>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Producción</div>
+                <div class="stat-icon">⚖️</div>
+              </div>
+              <p class="stat-value">4,8 toneladas</p>
+              <span class="stat-delta delta-up">+12% en cosecha</span>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Ingresos</div>
+                <div class="stat-icon">💵</div>
+              </div>
+              <p class="stat-value">₡18.400</p>
+              <span class="stat-delta delta-up">+9,5% este mes</span>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Alertas</div>
+                <div class="stat-icon">🚨</div>
+              </div>
+              <p class="stat-value">06</p>
+              <span class="stat-delta delta-down">3 requieren atención</span>
+            </article>
+          </section>
+
+          <section class="cards-grid">
+            <article class="card">
+              <h3>Avance por lotes</h3>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <div class="progress-top"><span>Lote 01</span><span>82%</span></div>
+                  <div class="progress-bar"><span style="width: 82%"></span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Lote 02</span><span>67%</span></div>
+                  <div class="progress-bar"><span style="width: 67%"></span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Lote 05</span><span>91%</span></div>
+                  <div class="progress-bar"><span style="width: 91%"></span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Labor actual</h3>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <div class="progress-top"><span>Recolección</span><span>46%</span></div>
+                  <div class="progress-bar"><span style="width: 46%; background: linear-gradient(90deg, #d9932a, #f1c76a);"></span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Beneficiado</span><span>74%</span></div>
+                  <div class="progress-bar"><span style="width: 74%; background: linear-gradient(90deg, #2d9a62, #6fbf8f);"></span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Tratamientos</span><span>58%</span></div>
+                  <div class="progress-bar"><span style="width: 58%; background: linear-gradient(90deg, #c85757, #ea8d8d);"></span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Resumen rápido</h3>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <div class="progress-top"><span>Gasto en insumos</span><span>₡4.200</span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Trabajadores activos</span><span>38</span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Enfermedades reportadas</span><span>08</span></div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="summary-grid">
+            <article class="panel">
+              <h3>Producción por mes</h3>
+              <div class="chart-squares" aria-label="Gráfico de producción">
+                <div class="square" style="height: 35%"></div>
+                <div class="square" style="height: 48%"></div>
+                <div class="square" style="height: 60%"></div>
+                <div class="square" style="height: 72%"></div>
+                <div class="square" style="height: 86%"></div>
+                <div class="square" style="height: 100%"></div>
+              </div>
+              <div class="panel-legend">
+                <span><i class="dot" style="background:#245d4c"></i> Año 2025</span>
+              </div>
+            </article>
+
+            <article class="table-panel">
+              <h3>Últimas alertas</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tipo</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Roya en lote 03</td>
+                    <td><span class="badge warning">Revisar</span></td>
+                  </tr>
+                  <tr>
+                    <td>Falta de fertilizante</td>
+                    <td><span class="badge primary">Pendiente</span></td>
+                  </tr>
+                  <tr>
+                    <td>Pago atrasado</td>
+                    <td><span class="badge danger">Urgente</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

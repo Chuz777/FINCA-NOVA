@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Finca | Contabilidad</title>
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <h1>FINCA NOVA</h1>
+
+          <nav class="top-nav" aria-label="Navegación principal">
+            <a href="../index.html">Inicio</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="lotes.html">Lotes</a>
+            <a href="produccion.html">Producción</a>
+            <a href="enfermedades.html">Enfermedades</a>
+            <a href="contabilidad.html" class="active">Contabilidad</a>
+            <a href="empleados.html">Empleados</a>
+          </nav>
+
+          <div class="user-badge">
+            <div class="user-avatar">JP</div>
+            <div>
+              <strong>Juan Pérez</strong><br />
+              <small>Administrador</small>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="main-grid">
+        <aside class="sidebar">
+          <h3 class="side-title">Navegación</h3>
+          <nav class="side-nav">
+            <a href="dashboard.html">📊 Dashboard</a>
+            <a href="lotes.html">🌱 Lotes</a>
+            <a href="produccion.html">⚙️ Producción</a>
+            <a href="enfermedades.html">🩺 Enfermedades</a>
+            <a href="contabilidad.html" class="active">💰 Contabilidad</a>
+            <a href="empleados.html">👥 Empleados</a>
+          </nav>
+        </aside>
+
+        <main class="content">
+          <section class="page-header">
+            <h2>Finanzas de la finca</h2>
+            <div class="action-group">
+              <button class="btn-small light">Reporte</button>
+              <button class="btn-small primary">Nuevo gasto</button>
+            </div>
+          </section>
+
+          <section class="stats-grid">
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Ingresos</div>
+                <div class="stat-icon">💵</div>
+              </div>
+              <p class="stat-value">₡18.400</p>
+              <span class="stat-delta delta-up">+9,5% mensual</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Egresos</div>
+                <div class="stat-icon">💸</div>
+              </div>
+              <p class="stat-value">₡9.800</p>
+              <span class="stat-delta delta-down">+4,2% mensual</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Utilidad</div>
+                <div class="stat-icon">📈</div>
+              </div>
+              <p class="stat-value">₡8.600</p>
+              <span class="stat-delta delta-up">Margen 47%</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Pagos</div>
+                <div class="stat-icon">🧾</div>
+              </div>
+              <p class="stat-value">23</p>
+              <span class="stat-delta delta-warning">5 pendientes</span>
+            </article>
+          </section>
+
+          <section class="list-grid">
+            <article class="panel">
+              <h3>Conceptos de gasto</h3>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <div class="progress-top"><span>Fertilizantes</span><span>₡2.400</span></div>
+                  <div class="progress-bar"><span style="width: 68%"></span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Productos químicos</span><span>₡1.800</span></div>
+                  <div class="progress-bar"><span style="width: 54%"></span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Mano de obra</span><span>₡3.200</span></div>
+                  <div class="progress-bar"><span style="width: 72%"></span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel">
+              <h3>Ventas del mes</h3>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <div class="progress-top"><span>Verde</span><span>₡7.500</span></div>
+                  <div class="progress-bar"><span style="width: 76%"></span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Seco</span><span>₡6.100</span></div>
+                  <div class="progress-bar"><span style="width: 64%"></span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Procesado</span><span>₡4.800</span></div>
+                  <div class="progress-bar"><span style="width: 58%"></span></div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="table-panel">
+            <h3>Movimientos recientes</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Concepto</th>
+                  <th>Tipo</th>
+                  <th>Monto</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12/08/2026</td>
+                  <td>Venta de café</td>
+                  <td>Ingreso</td>
+                  <td>₡2.100</td>
+                  <td><span class="badge success">Pagado</span></td>
+                </tr>
+                <tr>
+                  <td>11/08/2026</td>
+                  <td>Fertilizante</td>
+                  <td>Egreso</td>
+                  <td>₡680</td>
+                  <td><span class="badge primary">Confirmado</span></td>
+                </tr>
+                <tr>
+                  <td>09/08/2026</td>
+                  <td>Pago a empleados</td>
+                  <td>Egreso</td>
+                  <td>₡1.540</td>
+                  <td><span class="badge warning">Pendiente</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

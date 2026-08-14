@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Finca | Producción</title>
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <h1>FINCA NOVA</h1>
+
+          <nav class="top-nav" aria-label="Navegación principal">
+            <a href="../index.html">Inicio</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="lotes.html">Lotes</a>
+            <a href="produccion.html" class="active">Producción</a>
+            <a href="enfermedades.html">Enfermedades</a>
+            <a href="contabilidad.html">Contabilidad</a>
+            <a href="empleados.html">Empleados</a>
+          </nav>
+
+          <div class="user-badge">
+            <div class="user-avatar">JP</div>
+            <div>
+              <strong>Juan Pérez</strong><br />
+              <small>Administrador</small>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="main-grid">
+        <aside class="sidebar">
+          <h3 class="side-title">Navegación</h3>
+          <nav class="side-nav">
+            <a href="dashboard.html">📊 Dashboard</a>
+            <a href="lotes.html">🌱 Lotes</a>
+            <a href="produccion.html" class="active">⚙️ Producción</a>
+            <a href="enfermedades.html">🩺 Enfermedades</a>
+            <a href="contabilidad.html">💰 Contabilidad</a>
+            <a href="empleados.html">👥 Empleados</a>
+          </nav>
+        </aside>
+
+        <main class="content">
+          <section class="page-header">
+            <h2>Control de producción</h2>
+            <div class="action-group">
+              <button class="btn-small light">Ver historial</button>
+              <button class="btn-small primary">Registrar cosecha</button>
+            </div>
+          </section>
+
+          <section class="stats-grid">
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Café recolectado</div>
+                <div class="stat-icon">📦</div>
+              </div>
+              <p class="stat-value">2.480 kg</p>
+              <span class="stat-delta delta-up">+14% esta semana</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Café seco</div>
+                <div class="stat-icon">🌾</div>
+              </div>
+              <p class="stat-value">1.760 kg</p>
+              <span class="stat-delta delta-up">Rendimiento 71%</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Café procesado</div>
+                <div class="stat-icon">☕</div>
+              </div>
+              <p class="stat-value">1.290 kg</p>
+              <span class="stat-delta delta-up">+7% frente al mes pasado</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-label">Pérdida</div>
+                <div class="stat-icon">📉</div>
+              </div>
+              <p class="stat-value">8.1%</p>
+              <span class="stat-delta delta-down">Controlar en próxima etapa</span>
+            </article>
+          </section>
+
+          <section class="list-grid">
+            <article class="panel">
+              <h3>Etapas de procesamiento</h3>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <div class="progress-top"><span>Recolección</span><span>78%</span></div>
+                  <div class="progress-bar"><span style="width: 78%"></span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Secado</span><span>66%</span></div>
+                  <div class="progress-bar"><span style="width: 66%"></span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Beneficiado</span><span>84%</span></div>
+                  <div class="progress-bar"><span style="width: 84%"></span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel">
+              <h3>Trabajadores con mejor rendimiento</h3>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <div class="progress-top"><span>María López</span><span>96%</span></div>
+                  <div class="progress-bar"><span style="width: 96%"></span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Pedro Ramos</span><span>89%</span></div>
+                  <div class="progress-bar"><span style="width: 89%"></span></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-top"><span>Ana Flores</span><span>82%</span></div>
+                  <div class="progress-bar"><span style="width: 82%"></span></div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="table-panel">
+            <h3>Registro de cosecha</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Lote</th>
+                  <th>Trabajador</th>
+                  <th>Peso recolectado</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12/08/2026</td>
+                  <td>Lote 01</td>
+                  <td>María López</td>
+                  <td>420 kg</td>
+                  <td><span class="badge success">Finalizado</span></td>
+                </tr>
+                <tr>
+                  <td>11/08/2026</td>
+                  <td>Lote 03</td>
+                  <td>Pedro Ramos</td>
+                  <td>390 kg</td>
+                  <td><span class="badge warning">En proceso</span></td>
+                </tr>
+                <tr>
+                  <td>10/08/2026</td>
+                  <td>Lote 05</td>
+                  <td>Ana Flores</td>
+                  <td>360 kg</td>
+                  <td><span class="badge success">Finalizado</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
